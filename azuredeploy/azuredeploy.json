@@ -36,7 +36,7 @@
         "subnetName": "contosoSubnet1",
         "vmExtensionName": "dscExtension",
         "configurationFunction": "ContosoWebsite.ps1\\ContosoWebsite",
-        "modulesURL": "https://raw.githubusercontent.com/Araffe/ARM-Templates/master/infra-security-lab/ContosoWebsite.ps1.zip"
+        "modulesURL": "https://raw.githubusercontent.com/dcant6/ARM-Templates/master/infra-security-lab/ContosoWebsite.ps1.zip"
     },
     "resources": [
         {
@@ -135,7 +135,7 @@
             ],
             "properties": {
                 "hardwareProfile": {
-                    "vmSize": "Standard_B1ms"
+                    "vmSize": "Standard_B2s"
                 },
                 "osProfile": {
                     "computerName": "[variables('vmNames')[copyIndex()]]",
@@ -209,7 +209,7 @@
             ],
             "properties": {
                 "hardwareProfile": {
-                    "vmSize": "Standard_B1ms"
+                    "vmSize": "Standard_B2s"
                 },
                 "osProfile": {
                     "computerName": "[variables('vmNames')[copyIndex(2)]]",
